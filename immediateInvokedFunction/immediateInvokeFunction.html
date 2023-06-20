@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  (function () {
+    var message = "IIFE";
+    console.log(message);
+  })();
+  console.log(message); //error:msg is not defined
+</script>
+<script>
+  (function () {
+    var message = "invoked function ";
+    console.log(message);
+  })();
+  console.log(message);
+</script>
+<script>
+  (function (a, b) {
+    let c = a + b;
+    // console.log(c);
+    console.log(c);
+    return c;
+  })(2, 4);
+  console.log(c);
+</script>
+<script>
+  (function (d, e) {
+    let f = d + e;
+    console.log(f);
+  })(2, 5);
+  console.log(f);
+</script>
