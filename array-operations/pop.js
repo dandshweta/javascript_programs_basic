@@ -4,4 +4,6 @@ function pop(arr) {
 }
 console.log(pop([1, 4, 6, 7, 9, 4, 5]));
 //it delete last element
-[1, 4, 6, 7, 9, 4];
+// [1, 4, 6, 7, 9, 4];
+
+console.log(pop[2]);
